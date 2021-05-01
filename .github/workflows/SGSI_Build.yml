@@ -12,7 +12,7 @@ env:
   OS_TYPE: 'Flyme'
   BUILD_TYPE: 'ab'
   REPACK_NAME: 'flyme.zip'
-  VERSION: '10'
+  VERSION: '12'
   upload_WeTransfer: 'true'
   upload_action-gh-release: 'false'
   SETUP: 'true'
@@ -85,7 +85,7 @@ jobs:
            ./transfer wet ./$REPACK_NAME
 
        - name: Upload SGSI to action-gh-release...
-         if: env.upload_action-gh-release == 'true'
+         if: env.upload_action-gh-release == 'false'
          uses: softprops/action-gh-release@v1
          with:
            files: ${{ github.workspace }}/SGSI-build-tool/${{ env.REPACK_NAME }}
