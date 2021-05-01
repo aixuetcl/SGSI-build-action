@@ -11,7 +11,7 @@ env:
   ZIP_NAME: 'update.zip'
   OS_TYPE: 'Flyme'
   BUILD_TYPE: 'ab'
-  REPACK_NAME: 'SGSI.zip'
+  REPACK_NAME: 'flyme.zip'
   VERSION: '10'
   upload_WeTransfer: 'true'
   upload_action-gh-release: 'false'
